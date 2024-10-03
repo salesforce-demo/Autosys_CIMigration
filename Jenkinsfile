@@ -4,7 +4,7 @@ pipeline {
         stage('GITHUB') { 
             steps {
                 echo "This is my SCM Job"
-                git 'https://github.com/DineshKuswah/demo-java.git'
+                git 'https://github.com/krishnavagu/demo-java.git'
             }
         }
         stage('Build and Package') { 
