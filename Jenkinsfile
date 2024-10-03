@@ -30,8 +30,7 @@ pipeline {
                     credentialsId: 'nexus',
                    artifacts: [
                         [artifactId: 'demo', classifier: '', extension: 'war', file: 'target/demo.war'],
-                        [artifactId: 'demo', classifier: 'sources', extension: 'war', file: 'target/demo-sources.war'],
-                        [artifactId: 'demo', classifier: 'javadoc', extension: 'war', file: 'target/demo-javadoc.war']
+
                     ]
                 )
             }
