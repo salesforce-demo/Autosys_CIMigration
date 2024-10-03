@@ -23,10 +23,10 @@ pipeline {
                 nexusArtifactUploader(
                     nexusVersion: 'nexus3',
                     protocol: 'http',
-                    nexusUrl: '20.235.240.119:8081',
+                    //nexusUrl: '20.235.240.119:8081',
                     groupId: 'com.domain',
                     version: '1.0-SNAPSHOT',
-                   // repository: 'http://20.235.240.119:8081/repository/demo-java/',
+                    repository: 'http://20.235.240.119:8081/repository/demo-java/',
                     credentialsId: 'nexus',
                    artifacts: [
                         [artifactId: 'demo', classifier: '', extension: 'war', file: 'target/demo.war'],
