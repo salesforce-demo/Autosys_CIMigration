@@ -29,9 +29,9 @@ pipeline {
                     repository: 'http://20.235.240.119:8081/#admin/repository/repositories:demo-java',
                     credentialsId: 'nexus',
                    artifacts: [
-                        [artifactId: 'demo', classifier: '', extension: 'war', file: 'target/demo-1.0.0.war'],
-                        [artifactId: 'demo', classifier: 'sources', extension: 'war', file: 'target/demo-1.0.0-sources.war'],
-                        [artifactId: 'demo', classifier: 'javadoc', extension: 'war', file: 'target/demo-1.0.0-javadoc.war']
+                        [artifactId: 'demo', classifier: '', extension: 'war', file: 'target/demo.war'],
+                        [artifactId: 'demo', classifier: 'sources', extension: 'war', file: 'target/demo-sources.war'],
+                        [artifactId: 'demo', classifier: 'javadoc', extension: 'war', file: 'target/demo-javadoc.war']
                     ]
                 )
             }
