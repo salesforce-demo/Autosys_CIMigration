@@ -24,7 +24,7 @@ pipeline {
                     nexusVersion: 'nexus3',
                     protocol: 'http',
                     nexusUrl: '20.235.240.119:8081',
-                    groupId: 'com.domain',
+                    groupId: 'com.example.group',
                     version: '1.0-SNAPSHOT',
                     repository: 'http://20.235.240.119:8081/repository/demo-java/',
                     credentialsId: 'nexus',
