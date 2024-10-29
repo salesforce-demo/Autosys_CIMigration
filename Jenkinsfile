@@ -26,12 +26,12 @@ pipeline {
        //  }
  
  
-       // stage('Deploy') { 
-         //   steps {
-           //     echo "This is my Deployment job"
-             //   deploy adapters: [tomcat9(credentialsId: 'TomcatDeployment', path: '', url: 'http://54.163.10.210:8085/')], contextPath: null, war: '**/*.war'
-           // }
-       // }
+        stage('Deploy') { 
+            steps {
+                echo "This is my Deployment job"
+                deploy adapters: [tomcat9(credentialsId: 'TomcatDeployment', path: '', url: 'http://54.163.10.210:8085/')], contextPath: null, war: '**/*.war'
+            }
+        }
     }
 }
 
