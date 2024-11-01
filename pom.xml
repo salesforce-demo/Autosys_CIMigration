@@ -28,3 +28,4 @@
 		<finalName>LoginWebApp</finalName>
 	</build>
 </project>
+echo "Testing"
