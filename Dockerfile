@@ -11,6 +11,7 @@ RUN apt-get update && \
   rm -rf /var/lib/apt/lists/* && apt-get clean && apt-get purge
 
 RUN echo "export JAVA_OPTS=\"-Dapp.env=staging\"" > /usr/local/tomcat/bin/setenv.sh
+RUN echo "updated my docker file"
 COPY pkg/demo.war /usr/local/tomcat/webapps/demo.war
 
 EXPOSE 8081
